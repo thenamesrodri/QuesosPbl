@@ -1,0 +1,45 @@
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+@keyframes fadeInSocialCard {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.social-section .card {
+  animation: fadeInSocialCard 1.5s ease-out;
+}
+
+h2.text-center.text-secondary.display-4 {
+  font-size: 3rem; 
+  font-weight: 700; 
+}
+
+
+.social-section .card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background-color:#ffd072 ;
+}
+  .social-section {
+    margin-top: 150px; 
+  }
+
+  @keyframes fadeInSocialTitle {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  .social-section h2 {
+    animation: fadeInSocialTitle 1.5s ease-in-out;
+  }
+  

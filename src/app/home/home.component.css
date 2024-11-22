@@ -1,0 +1,150 @@
+.custom-header {
+  background-size: cover; 
+  background-position: center; 
+  color: #e63946; 
+  font-family: 'Arial', sans-serif; 
+  padding: 3rem 1rem; 
+}
+
+
+.custom-title {
+  font-size: 3rem; 
+  color: #e63946; 
+  font-weight: bold; 
+  margin-bottom: 1.5rem; 
+}
+
+
+.custom-subtitle {
+  font-size: 1.5rem; 
+  color: #e63946; 
+  font-weight: 300; 
+}
+
+
+.logo-img {
+  max-width: 290px;
+  width: 100%;
+  height: auto; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+
+img {
+  max-width: 100%; 
+  height: auto;
+}
+
+
+.text-justify {
+  text-align: justify;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  transition: all 0.3s ease;
+}
+
+h2.text-center.text-secondary.display-4 {
+  font-size: 3rem; 
+  font-weight: 700; 
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ffd072; 
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .custom-title {
+    font-size: 2.5rem; 
+  }
+
+  .custom-subtitle {
+    font-size: 1.25rem; 
+  }
+
+  .logo-img {
+    max-width: 180px; 
+    max-height: 180px;
+  }
+
+  img {
+    max-width: 100px; 
+    max-height: 100px;
+  }
+
+  .text-justify {
+    text-align: left; 
+  }
+
+  .card section {
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  .card section img {
+    width: 100px; 
+    height: 100px;
+    margin: 0 auto 20px; 
+  }
+
+  .card section h2 {
+    font-size: 1.5rem; 
+  }
+
+  .card section p {
+    font-size: 1rem; 
+  }
+
+
+}
+
+@keyframes slideDown {
+  0% { opacity: 0; transform: translateY(-50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.custom-header {
+  animation: slideDown 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+img {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeInText {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+h2, p {
+  animation: fadeInText 1.5s ease-out;
+}
+
+@keyframes slideDownLogo {
+  0% { opacity: 0; transform: translateY(-50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.custom-header img, .custom-header h1 {
+  animation: slideDownLogo 1s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}

@@ -1,0 +1,55 @@
+  .about-section {
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    padding: 2rem;
+  }
+  
+  .about-section h2 {
+    animation: fadeInText 1.5s ease-out;
+  }
+  
+  h2.text-center.text-secondary.display-4 {
+    font-size: 3rem; 
+    font-weight: 700; 
+  }
+  .about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    animation: fadeInText 2s ease-out;
+  }
+  
+  .production-image {
+    max-width: 100%; 
+    width: 480px;
+    height: 480px;
+  }
+
+  .text-justify {
+    text-align: justify;
+  }
+  
+  .header-image img {
+    width: 100%;
+    height: auto;
+    animation: fadeInImage 2s ease-in-out forwards;
+    opacity: 0; 
+  }
+  
+  @keyframes fadeInImage {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
